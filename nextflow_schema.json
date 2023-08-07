@@ -1,0 +1,242 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/./master/nextflow_schema.json",
+    "title": ". pipeline parameters",
+    "description": "",
+    "type": "object",
+    "definitions": {
+        "reference_genome_options": {
+            "title": "Reference genome options",
+            "type": "object",
+            "fa_icon": "fas fa-dna",
+            "description": "Reference genome related files and options required for the workflow.",
+            "properties": {
+                "fasta": {
+                    "type": "string",
+                    "format": "file-path",
+                    "mimetype": "text/plain",
+                    "pattern": "^\\S+\\.fn?a(sta)?(\\.gz)?$",
+                    "description": "Path to FASTA genome file.",
+                    "help_text": "fasta file path",
+                    "fa_icon": "far fa-file-code"
+                }
+            }
+        },
+        "inputs": {
+            "title": "Inputs",
+            "type": "object",
+            "description": "",
+            "properties": {
+               "sample_file": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": ""
+               },
+               "gene_panels": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GVx0vkQ433Gvq63k1Kj4Y562"
+               },
+               "exons_nirvana": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GF611Z8433Gk7gZ47gypK7ZZ"
+               },
+               "nirvana_genes2transcripts": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GV4P970433Gj6812zGVBZvB4"
+               },
+               "flank": {
+                  "type": "integer",
+                  "default": 495
+               },
+               "epic_menifest": {
+                 "type": "string",
+                 "format": "file-path",
+                  "default": ""
+               },
+               "outdir1": {
+                  "type": "string",
+                  "default": "./generate_bed_output"
+               },
+               "fasta_fai": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G6P32kj4YV3y58KyP4k4qG2p"
+               },
+               "fasta_gzi": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G6BYz104YV3X5qp463K5b5vp"
+               },
+               "ref_bcftools": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-F3zqGV04fXX5j7566869fjFq:file-F3zxG0Q4fXX9YFjP1v5jK9jf"
+               },
+               "cache_version": {
+                  "type": "integer",
+                  "default": 107
+               },
+               "cache_file": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GQ7YF104GV6YQ0B98qyQQP58"
+               },
+               "plugin_dir": {
+                  "type": "string",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:/assets/vep/vep_docker_v107.0/"
+               },
+               "clinvar": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GXBpzk84b1z1bgzyV6Xj2Jzf"
+               },
+               "clinvar_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GXBpzq04b1z1XYy36z9yYgZK"
+               },
+               "clinvar_custom_str": {
+                  "type": "string",
+                  "default": "ClinVar,vcf,exact,0,CLNSIG,CLNREVSTAT,CLNDN,CLNSIGCONF"
+               },
+               "hgmd": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GVKGk184jzBzGB4kkXp62GzK"
+               },
+               "hgmd_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-GVKGk404jzByPV0X4FjpQJZP"
+               },
+               "hgmd_custom_str": {
+                  "type": "string",
+                  "default": "HGMD,vcf,exact,0,PHEN,RANKSCORE,CLASS"
+               },
+               "gnomADg": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G6zvbFj4Kq40Byxg1vkBq6fQ"
+               },
+               "gnomADg_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G6zvbFj4Kq47J4fY1pXGYgbK"
+               },
+               "gnomADg_custom_str": {
+                  "type": "string",
+                  "default": "gnomADg,vcf,exact,0,AC,AN,AF,Hom"
+               },
+               "gnomADe": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G7vj6504kFX7bQyx258v3f1z"
+               },
+               "gnomADe_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G7vj6x04kFX53yZP1kF4x324"
+               },
+               "gnomADe_custom_str": {
+                  "type": "string",
+                  "default": "gnomADe,vcf,exact,0,AC,AN,AF,Hom"
+               },
+               "twe": {
+                "type": "string",
+                "format": "file-path",
+                "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9FBxGj4kFXPG23VBZKYGkJ7"
+               },
+               "twe_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9FBxX84kFX3qfjY9QjjXQ9x"
+               },
+               "twe_custom_str": {
+                  "type": "string",
+                  "default": "TWE,vcf,exact,0,AF,AC_Hom,AC_Het,AN"
+               },
+               "outdir2": {
+                  "type": "string",
+                  "default": "./vep_output"
+               },
+               "spliceAI_snv": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9FFfBj433GV57Zf8ZvxfbBg"
+               },
+               "spliceAI_snv_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9FFfz0433GZ1X13FqjjQJFF"
+               },
+               "spliceAI_indel": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9FF6zj433Gv5jxkFqpK6p7J"
+               },
+               "spliceAI_indel_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9FF6qQ433GxvVp497P5V05X"
+               },
+               "ravel": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9bybYj433GbyP5X4fPGy2VX"
+               },
+               "ravel_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9bygp8433GQX4f44f2Bqpb5"
+               },
+               "cadd_snv": {
+                 "type": "string",
+                 "format": "file-path",
+                 "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G5KjGZ84YV3xFfv221vJQjQZ"
+               },
+               "cadd_snv_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G5KjKf84YV3y39z97vbXJ60b"
+               },
+               "cadd_gnomad_genome": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G6BYB5Q433GvQGgF58976p7J"
+               },
+               "cadd_gnomad_genome_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G6BYB8j433GyJ3f13z8GB4ZV"
+               },
+               "cadd_indel37": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9G2KKj4jKX8xxK7975q7XgX"
+               },
+               "cadd_indel37_index": {
+                  "type": "string",
+                  "format": "file-path",
+                  "default": "project-Fkb6Gkj433GVVvj73J7x8KbV:file-G9G2KPj4jKXPG23VBZKYv570"
+               },
+               "field_str": {
+                  "type": "string",
+                  "default": "Allele,SYMBOL,HGNC_ID,VARIANT_CLASS,Consequence,IMPACT,EXON,INTRON,Feature,HGVSc,HGVSp,HGVS_OFFSET,Existing_variation,STRAND,ClinVar,ClinVar_CLNSIG,ClinVar_CLNSIGCONF,ClinVar_CLNDN,gnomADg_AC,gnomADg_AN,gnomADg_AF,gnomADe_AC,gnomADe_AN,gnomADe_AF,gnomADe_Hom,TWE_AF,TWE_AC_Hom,TWE_AC_Het,TWE_AN,HGMD,HGMD_PHEN,HGMD_CLASS,HGMD_RANKSCORE,SpliceAI_pred_DS_AG,SpliceAI_pred_DS_AL,SpliceAI_pred_DS_DG,SpliceAI_pred_DS_DL,SpliceAI_pred_DP_AG,SpliceAI_pred_DP_AL,SpliceAI_pred_DP_DG,SpliceAI_pred_DP_DL,REVEL,CADD_PHRE"
+               },
+               "buffer_size": {
+                  "type": "integer",
+                  "default": 500
+               }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/reference_genome_options"
+        }
+    ]
+    
+}
