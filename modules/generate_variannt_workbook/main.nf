@@ -2,7 +2,7 @@ process generate_variannt_workbook{
 
   debug true
   tag "$vcf"
-  publishDir params.outdir1, mode:'copy'
+  publishDir params.outdir4, mode:'copy'
   
   input:
   path vcf
