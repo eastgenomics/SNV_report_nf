@@ -41,4 +41,4 @@ NOTE: `nextflow_pipeline_params` in `inputs.json` file is default to project wit
 dx run applet-xxxx \
 -f /local/path/to/json/file/inputs.json
 ```
-
+![Image of workflow](workflow.png)
