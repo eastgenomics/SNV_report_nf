@@ -1,0 +1,152 @@
+{
+    
+   "clinvar" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-GXBpzk84b1z1bgzyV6Xj2Jzf"
+        }
+    },
+    
+   "clinvar_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-GXBpzq04b1z1XYy36z9yYgZK"
+        }
+    },    
+   "hgmd" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-GVKGk184jzBzGB4kkXp62GzK"
+        }
+    },     
+   "hgmd_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-GVKGk404jzByPV0X4FjpQJZP"
+        }
+    },  
+    
+   "gnomADg" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G6zvbFj4Kq40Byxg1vkBq6fQ"
+        }
+    },  
+    
+   "gnomADg_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G6zvbFj4Kq47J4fY1pXGYgbK"
+        }
+    }, 
+    
+   "gnomADe" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G7vj6504kFX7bQyx258v3f1z"
+        }
+    },     
+    
+   "gnomADe_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G7vj6x04kFX53yZP1kF4x324"
+        }
+    },  
+   "twe" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9FBxGj4kFXPG23VBZKYGkJ7"
+        }
+    },  
+    
+   "twe_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9FBxX84kFX3qfjY9QjjXQ9x"
+        }
+    },  
+      
+   "spliceAI_snv" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9FFfBj433GV57Zf8ZvxfbBg"
+        }
+    },        
+   "spliceAI_snv_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9FFfz0433GZ1X13FqjjQJFF"
+        }
+    }, 
+    
+   "spliceAI_indel" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9FF6zj433Gv5jxkFqpK6p7J"
+        }
+    }, 
+    
+  "spliceAI_indel_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9FF6qQ433GxvVp497P5V05X"
+        }
+    }, 
+    
+  "ravel" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9bybYj433GbyP5X4fPGy2VX"
+        }
+    }, 
+    
+  "ravel_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9bygp8433GQX4f44f2Bqpb5"
+        }
+    }, 
+    
+  "cadd_snv" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G5KjGZ84YV3xFfv221vJQjQZ"
+        }
+    },
+  "cadd_snv_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G5KjKf84YV3y39z97vbXJ60b"
+        }
+    },  
+    
+    
+  "cadd_gnomad_genome" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G6BYB5Q433GvQGgF58976p7J"
+        }
+    },  
+  "cadd_gnomad_genome_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G6BYB8j433GyJ3f13z8GB4ZV"
+        }
+    }, 
+    
+  "cadd_indel37" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9G2KKj4jKX8xxK7975q7XgX"
+        }
+    },      
+  "cadd_indel37_index" : {
+        "$dnanexus_link" : {
+            "project": "project-Fkb6Gkj433GVVvj73J7x8KbV",
+            "id": "file-G9G2KPj4jKXPG23VBZKYv570"
+        }
+    },
+
+  "nextflow_pipeline_params":"--sample_file=dx://project-GX84pyQ4FKX336bxfkQV7X1X:/athena_test/*_Haplotyper.vcf.gz --epic_menifest=dx://project-GX84pyQ4FKX336bxfkQV7X1X:/gen_bed_ref/epic-manifest-198.txt  --pb_bed=dx://project-GX84pyQ4FKX336bxfkQV7X1X:/athena_test/*per-base.bed.gz --build=dx://project-GX84pyQ4FKX336bxfkQV7X1X:/athena_test/*_build.txt"
+}
